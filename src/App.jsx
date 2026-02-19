@@ -1,13 +1,28 @@
+// CSS
 import "./App.css";
-import { data } from "./data/data.js";
+
+// data
+import data from "./data/data.js";
+
+// Components
+import Navbar from "./components/Navbar.jsx";
+import Hero from "./components/Hero.jsx";
+import Section from "./components/Section.jsx";
+import Skills from "./components/Skills.jsx";
+import Education from "./components/Education.jsx";
+import Projects from "./components/Projects.jsx";
+import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 
 export default function App() {
   return (
     <div className="page">
       <div className="shell">
+        
         <Navbar />
 
         <main className="content">
+
           <Hero data={data} />
 
           <Section id="skills" title="Skills">
@@ -25,9 +40,11 @@ export default function App() {
           <Section id="contact" title="Contact">
             <Contact email={data.email} links={data.links} />
           </Section>
+
         </main>
 
         <Footer name={data.name} />
+
       </div>
     </div>
   );

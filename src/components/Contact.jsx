@@ -9,7 +9,11 @@ export default function Contact({ email, links }) {
           sub={email}
           meta="Click the button below to reach me."
         />
-        <Card title="Links" sub="GitHub + LinkedIn" meta="Open my profiles." />
+        <Card
+          title="Social"
+          sub="GitHub • LinkedIn • X"
+          meta="Connect with me online."
+        />
       </div>
 
       <div
@@ -19,6 +23,7 @@ export default function Contact({ email, links }) {
         <a className="btn btnPrimary" href={`mailto:${email}`}>
           Email Me
         </a>
+
         <a
           className="btn btnGhost"
           href={links.github}
@@ -27,6 +32,7 @@ export default function Contact({ email, links }) {
         >
           GitHub
         </a>
+
         <a
           className="btn btnGhost"
           href={links.linkedin}
@@ -34,6 +40,15 @@ export default function Contact({ email, links }) {
           rel="noreferrer"
         >
           LinkedIn
+        </a>
+
+        <a
+          className="btn btnGhost"
+          href={links.x}
+          target="_blank"
+          rel="noreferrer"
+        >
+          X
         </a>
       </div>
     </>

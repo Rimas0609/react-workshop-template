@@ -6,17 +6,19 @@ html {
     width: 100%;
     max-width: 980px;
     margin: 0 auto;
+  
 }
 
 /* Main glass container */
 .shell {
     width: 100%;
     border-radius: 26px;
-    background: rgba(255, 255, 255, 0.92);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+    background: rgb(236, 236, 220);
+    border: 1px solid rgba(185, 167, 126, 0.3);
+    box-shadow: 0 25px 70px rgba(172, 156, 67, 0.35);
     backdrop-filter: blur(10px);
     overflow: hidden;
+   
 }
 
 /* Top nav */
@@ -34,19 +36,19 @@ html {
 
     padding: 10px 12px;
 
-    background: rgba(255, 255, 255, 0.82);
-    border: 1px solid rgba(15, 23, 42, 0.1);
+    background: rgba(182, 158, 79, 0.315);
+    border: 1px solid rgba(100, 71, 9, 0.021);
     backdrop-filter: blur(12px);
 }
 
 .brand {
     font-weight: 950;
     letter-spacing: -0.02em;
-    color: #0f172a;
+    color: #2a250f;
     padding: 6px 10px;
     border-radius: 999px;
-    background: rgba(7, 45, 119, 0.06);
-    border: 1px solid rgba(7, 45, 119, 0.1);
+    background: rgba(119, 102, 7, 0.06);
+    border: 1px solid rgba(119, 93, 7, 0.1);
 }
 
 .navlinks {
@@ -60,13 +62,13 @@ html {
     text-decoration: none;
     font-weight: 850;
     font-size: 14px;
-    color: #0f172a;
+    color: #3f2915;
 
     padding: 8px 12px;
     border-radius: 999px;
 
-    background: rgba(15, 23, 42, 0.04);
-    border: 1px solid rgba(15, 23, 42, 0.08);
+    background: rgba(42, 34, 15, 0.04);
+    border: 1px solid rgba(42, 35, 15, 0.08);
     transition:
         transform 0.15s ease,
         background 0.15s ease;
@@ -74,13 +76,13 @@ html {
 
 .navlinks a:hover {
     transform: translateY(-1px);
-    background: rgba(7, 45, 119, 0.1);
+    background: rgba(119, 89, 7, 0.1);
 }
 
 .navlinks a.cta {
-    background: #072d77;
-    color: white;
-    border-color: rgba(7, 45, 119, 0.2);
+    background: #e7d673;
+    color: rgb(71, 50, 5);
+    border-color: rgba(119, 99, 7, 0.2);
 }
 
 /* Content spacing */
@@ -96,7 +98,7 @@ html {
     margin: 0 0 12px;
     font-size: 18px;
     letter-spacing: -0.02em;
-    color: #072d77;
+    color: #443803;
 }
 
 /* HERO */
@@ -106,20 +108,20 @@ html {
 
     border-radius: 22px;
     padding: 26px 18px;
-    border: 1px solid rgba(15, 23, 42, 0.1);
+    border: 1px solid rgba(42, 38, 15, 0.1);
     background:
         radial-gradient(
             900px 300px at 25% 0%,
-            rgba(56, 135, 185, 0.2),
+            rgba(185, 166, 56, 0.2),
             transparent 60%
         ),
         radial-gradient(
             900px 300px at 85% 15%,
-            rgba(49, 154, 132, 0.16),
+            rgba(154, 138, 49, 0.16),
             transparent 60%
         ),
-        #ffffff;
-    box-shadow: 0 14px 40px rgba(2, 6, 23, 0.1);
+        #f3f0d9;
+    box-shadow: 0 14px 40px rgba(124, 112, 5, 0.1);
 
     display: grid;
     justify-items: center;
@@ -133,7 +135,7 @@ html {
     inset: -120px;
     background: radial-gradient(
         circle at 50% 20%,
-        rgba(7, 45, 119, 0.08),
+        rgba(119, 112, 7, 0.08),
         transparent 55%
     );
     filter: blur(20px);
@@ -142,14 +144,15 @@ html {
 
 .avatarWrap {
     position: relative;
-    width: 118px;
-    height: 118px;
+    width: 150px;
+    height: 150px;
     border-radius: 28px;
     display: grid;
     place-items: center;
 
-    background: rgba(7, 45, 119, 0.06);
-    border: 1px solid rgba(7, 45, 119, 0.16);
+    background: rgba(119, 80, 7, 0.06);
+    border: 1px solid rgba(119, 102, 7, 0.16);
+    overflow: hidden;
 }
 
 .avatarWrap::after {
@@ -157,40 +160,46 @@ html {
     position: absolute;
     inset: -6px;
     border-radius: 34px;
-    border: 2px solid rgba(7, 45, 119, 0.1);
+    border: 2px solid rgba(119, 84, 7, 0.1);
     pointer-events: none;
 }
 
 .photo,
 .avatar {
-    width: 108px;
-    height: 108px;
-    border-radius: 22px;
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+    border: 5px solid white;
     display: grid;
     place-items: center;
     object-fit: cover;
 
-    background: rgba(255, 255, 255, 0.9);
-    border: 2px solid rgba(255, 255, 255, 0.95);
-    box-shadow: 0 10px 24px rgba(2, 6, 23, 0.12);
+    background: rgba(255, 251, 246, 0.9);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
 }
 
 .avatar {
     font-weight: 950;
     font-size: 42px;
-    color: #072d77;
+    color: #776607;
 }
 
 .heroName {
     margin: 6px 0 0;
-    font-size: 32px;
-    font-weight: 950;
+    font-size: 2.5rem;
+    font-weight: bold;
     letter-spacing: -0.04em;
-    color: #0f172a;
+    color: #443a14;
     position: relative;
     z-index: 1;
+    transition: all 0.3s ease-in-out;
 }
-
+.heroName:hover {
+    color: #c0aa2c;           
+    transform: scale(1.1);    
+    cursor: pointer;          
+    text-shadow: 0px 4px 10px rgba(0,0,0,0.1); 
+}
 .heroRole {
     display: inline-flex;
     align-items: center;
@@ -199,10 +208,10 @@ html {
     padding: 8px 14px;
     border-radius: 999px;
 
-    background: rgba(7, 45, 119, 0.1);
-    border: 1px solid rgba(7, 45, 119, 0.14);
+    background: rgba(119, 102, 7, 0.1);
+    border: 1px solid rgba(119, 89, 7, 0.14);
 
-    color: #072d77;
+    color: #695205;
     font-weight: 900;
     font-size: 13px;
     position: relative;
@@ -214,13 +223,13 @@ html {
     width: 34px;
     height: 3px;
     border-radius: 999px;
-    background: rgba(7, 45, 119, 0.55);
+    background: rgba(66, 50, 4, 0.55);
     display: inline-block;
 }
 
 .heroEmail {
     margin: 2px 0 0;
-    color: #475569;
+    color: #5a472e;
     font-weight: 700;
     font-size: 13px;
     position: relative;
@@ -230,7 +239,7 @@ html {
 .heroSummary {
     margin: 8px 0 0;
     max-width: 62ch;
-    color: #111827;
+    color: #272111;
     line-height: 1.6;
     position: relative;
     z-index: 1;
@@ -263,13 +272,13 @@ html {
 }
 
 .btnPrimary {
-    background: #072d77;
-    color: #fff;
+    background: #e2d55bcc;
+    color: #633f0b;
 }
 
 .btnGhost {
-    background: rgba(255, 255, 255, 0.8);
-    color: #072d77;
+    background: rgba(247, 231, 162, 0.452);
+    color: #5c5307;
     border: 1px solid rgba(15, 23, 42, 0.15);
 }
 
@@ -286,32 +295,32 @@ html {
 }
 
 .card {
-    border: 1px solid rgba(15, 23, 42, 0.12);
+    border: 1px solid rgba(42, 33, 15, 0.12);
     border-radius: 18px;
     padding: 14px;
-    background: rgba(255, 255, 255, 0.92);
-    box-shadow: 0 10px 26px rgba(2, 6, 23, 0.06);
+    background: rgba(241, 220, 150, 0.082);
+    box-shadow: 0 10px 26px rgba(180, 134, 48, 0.06);
     transition:
         transform 0.18s ease,
         box-shadow 0.18s ease;
 }
 .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 16px 34px rgba(2, 6, 23, 0.1);
+    box-shadow: 0 16px 34px rgba(223, 160, 65, 0.445);
 }
 
 .cardTitle {
     font-weight: 950;
-    color: #0f172a;
+    color: #362705;
 }
 .cardSub {
     margin-top: 6px;
-    color: #334155;
+    color: #664d2b;
     font-weight: 750;
 }
 .cardMeta {
     margin-top: 6px;
-    color: #64748b;
+    color: #9c7649;
     font-size: 13px;
     font-weight: 650;
 }
@@ -336,9 +345,9 @@ html {
 .skillPill {
     border-radius: 16px;
     padding: 12px;
-    border: 1px solid rgba(15, 23, 42, 0.12);
-    background: rgba(7, 45, 119, 0.06);
-    color: #072d77;
+    border: 1px solid rgba(85, 53, 10, 0.12);
+    background: rgba(187, 164, 33, 0.06);
+    color: #804604;
     font-weight: 900;
     display: flex;
     justify-content: space-between;
@@ -347,9 +356,9 @@ html {
 
 .skillTag {
     font-size: 12px;
-    color: rgba(7, 45, 119, 0.75);
-    background: rgba(255, 255, 255, 0.75);
-    border: 1px solid rgba(7, 45, 119, 0.12);
+    color: rgba(116, 69, 8, 0.75);
+    background: rgba(233, 232, 174, 0.63);
+    border: 1px solid rgba(126, 79, 9, 0.12);
     padding: 6px 10px;
     border-radius: 999px;
     font-weight: 900;
@@ -371,7 +380,7 @@ html {
     bottom: 6px;
     width: 2px;
     border-radius: 999px;
-    background: rgba(7, 45, 119, 0.18);
+    background: rgba(0, 0, 0, 0.514);
 }
 
 .tItem {
@@ -385,16 +394,16 @@ html {
     width: 14px;
     height: 14px;
     border-radius: 999px;
-    background: #072d77;
+    background: #683206;
     margin-top: 6px;
-    box-shadow: 0 0 0 4px rgba(7, 45, 119, 0.12);
+    box-shadow: 0 0 0 4px rgba(210, 228, 110, 0.281);
 }
 
 /* Footer */
 .footer {
     padding: 18px;
-    border-top: 1px solid rgba(15, 23, 42, 0.1);
-    color: #64748b;
+    border-top: 1px solid rgba(42, 36, 15, 0.1);
+    color: #493e02;
     font-size: 13px;
     text-align: center;
 }
