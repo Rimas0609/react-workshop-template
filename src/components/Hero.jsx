@@ -5,7 +5,7 @@ export default function Hero({ data }) {
     <div className="hero" id="home">
       <div className="avatarWrap">
         
-      <img className="photo" src="/rimas.jpg" alt="Rimas profile"/>
+     <img className="photo" src={`${import.meta.env.BASE_URL}rimas.jpg`} alt="Rimas profile" />
       </div>
 
      <h1 className="heroName">{data.name}</h1>
